@@ -4,7 +4,7 @@ pipeline {
  stage('Stage 1') {
      steps {
        script {
-    start cmd.exe /c C:\jenkins\samplebatch.bat
+      bat 'C:\\jenkins\\samplebatch.bat'
        }
      }
    }
