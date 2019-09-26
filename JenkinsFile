@@ -5,8 +5,7 @@ pipeline {
      steps {
        script {
          
-	cd C:\jenkins
-	samplebatch.bat
+	C:\jenkins\samplebatch.bat
        }
      }
    }
