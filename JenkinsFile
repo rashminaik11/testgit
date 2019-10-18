@@ -1,23 +1,29 @@
+
 pipeline {
- agent any
- stages {
- stage('Stage 1') {
-     steps {
-       script {
-             bat 'C:\\jenkins\\samplebatch.bat'
-       }
-     }
-     
-     
-     stage('Clone') {
-     steps {
-       script {
-       https://github.com/rashminaik11/testgit.git
-      
-       }
-     }
-     
-}
-   }
+agent any
+stages {
+stage('Stage 1') {
+    steps {
+      script {
+     bat 'C:\\jenkins\\samplebatch.bat'
+      }
+    }
   }
+
+stage('Clone') {
+    steps {
+      script {
+     git url:'https://github.com/rashminaik11/testgit.git'
+      }
+    }
+  }
+ }
 }
+
+
+
+
+
+
+
+
