@@ -2,7 +2,7 @@
 pipeline {
 agent any
 stages {
-stage('Stage 1') {
+stage('Build from local') {
     steps {
       script {
      bat 'C:\\jenkins\\samplebatch.bat'
@@ -18,7 +18,7 @@ stage('Clone') {
     }
   }
   
-  stage('Clone') {
+  stage('Build from cloned repo') {
     steps {
       script {
      bat 'C:\\Users\\Administrator\\testgit\\samplebatch.bat'
