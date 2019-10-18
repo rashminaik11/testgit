@@ -17,6 +17,20 @@ stage('Clone') {
       }
     }
   }
+  
+  stage('Clone') {
+    steps {
+      script {
+     bat 'C:\\Users\\Administrator\\testgit\\samplebatch.bat'
+      }
+    }
+  }
+  
+  
+  
+  
+ 
+  
  }
 }
 
