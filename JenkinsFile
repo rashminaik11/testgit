@@ -8,6 +8,7 @@ pipeline {
        }
      }
      
+     
      stage('Clone') {
      steps {
        script {
@@ -16,7 +17,7 @@ pipeline {
        }
      }
      
-
+}
    }
   }
 }
