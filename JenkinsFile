@@ -4,10 +4,19 @@ pipeline {
  stage('Stage 1') {
      steps {
        script {
-       https://github.com/rashminaik11/testgit.git
-      bat 'C:\\jenkins\\samplebatch.bat'
+             bat 'C:\\jenkins\\samplebatch.bat'
        }
      }
+     
+     stage('Clone') {
+     steps {
+       script {
+       https://github.com/rashminaik11/testgit.git
+      
+       }
+     }
+     
+
    }
   }
 }
