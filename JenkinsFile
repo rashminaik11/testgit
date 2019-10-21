@@ -1,4 +1,4 @@
-
+libraray 'shared-lib-python'
 pipeline {
 agent any
 stages {
