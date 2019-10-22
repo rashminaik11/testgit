@@ -20,13 +20,7 @@ stage('Clone') {
     }
   }
   
-  stage('Build from cloned repo') {
-    steps {
-      script {
-     bat 'C:\\Users\\Administrator\\testgit\\samplebatch.bat'
-      }
-    }
-  }
+  
   
   
   
