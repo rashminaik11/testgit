@@ -1,4 +1,4 @@
-libraray 'shared-lib-python'
+
 pipeline {
 agent any
 stages {
@@ -14,6 +14,8 @@ stage('Clone') {
     steps {
       script {
      git url:'https://github.com/rashminaik11/testgit.git'
+     git clone 'https://github.com/rashminaik11/testgit.git'.execute()
+
       }
     }
   }
