@@ -16,7 +16,9 @@ stage('Build')
 
 stage('clone')
 {
+steps{
 checkout scm;
+}
 }
 }
 }
