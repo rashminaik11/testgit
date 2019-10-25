@@ -1,38 +1,22 @@
 
-pipeline {
+
+
+
+
+
+
+
+
+
+pipeline
+{
 agent any
-stages {
-stage('Build from local') {
-    steps {
-      script {
-     
-      }
-    }
-  }
+ stages {
+stage('Build')
 
-stage('Clone') {
-    steps {
-      script {
- checkout scm;
-
-      }
-    }
-  }
-  
-  
-  
-  
-  
-  
- 
-  
- }
+stage('clone')
+{
+checkout scm;
 }
-
-
-
-
-
-
-
-
+}
+}
