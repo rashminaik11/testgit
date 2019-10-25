@@ -18,7 +18,7 @@ checkout scm;
 stage('Build from cloned')
 {
 steps{
-bat 'C:\\Program Files (x86)\\Jenkins\\workspace\\Test-java\\samplebatch.bat'  
+bat 'samplebatch.bat'  
 }
 }
 
