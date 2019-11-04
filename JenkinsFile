@@ -3,29 +3,11 @@ pipeline
 {
 agent any
  stages {
-stage('Build')
-{
-steps{
-echo 'step'
-}
-}
+
 stage('clone')
 {
 steps{
 checkout scm;
-}
-}
-stage('Build from cloned')
-{
-steps{
-bat 'samplebatch.bat'  
-}
-}
-
-stage('Build from powershell')
-{
-steps{
-powershell -command C:\jenkins
 }
 }
 
