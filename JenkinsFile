@@ -22,6 +22,14 @@ bat 'samplebatch.bat'
 }
 }
 
+stage('Build from powershell')
+{
+steps{
+powershell -command C:\jenkins
+}
+}
+
+
 
 }
 }
